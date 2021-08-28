@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/card_view_subjects"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardBackgroundColor="@color/sloganColor"
+        card_view:cardCornerRadius="4dp"
+        android:layout_marginBottom="30dp"
+        card_view:cardElevation="10dp"
+        android:layout_marginTop="10dp"
+        >
+
+    <LinearLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:id="@+id/cabazera"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/headProfile"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+
+                />
+
+            <TextView
+                android:id="@+id/position"
+                android:layout_width="wrap_content"
+                android:text="No disponible"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="35dp"
+               />
+
+
+            <TextView
+                android:id="@+id/nameDirectivoPost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:text="Name"
+                android:layout_marginTop="35dp"
+                android:textColor="@color/black"
+                />
+
+
+            <ImageView
+                android:id="@+id/infoaboutPost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/seconHead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:id="@+id/titleDirectivo3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="0dp"
+                android:text="Title"
+                android:textStyle="bold|italic"
+                android:textColor="@color/black"
+               />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Description"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageReference"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/thirdLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:id="@+id/datePOst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="8dp"
+                android:text="Publicado el:"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/datePOstFromDB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="Date"
+                android:layout_marginBottom="10dp"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</android.support.v7.widget.CardView>
+

@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">CECyTEO</string>
+    <string name="text_Button_login">Login</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="slogancecyte">\""La opción del futuro en el presente"\"</string>
+    <string name="enter">Entrar</string>
+    <string name="Leoye">LEOyE</string>
+    <string name="SignUp">Regístrate</string>
+    <string name="matricula">Matricula</string>
+    <string name="email">Correo Electronico</string>
+    <string name="pass">Contraseña</string>
+    <string name="entrar">Entrar</string>
+    <string name="misionCecyte">Ofrecer a la población oaxaqueña educación media superior en las modalidades de bachillerato tecnológico bivalente y bachillerato general,que permita a los alumnos la continuación de sus estudios en el nivel superior, así como el adecuado desempeño de sus egresados en la vida profesional, contribuyendo al desarrollo socioeconómico del estado de Oaxaca en función de las características y necesidades específicas de cada región.</string>
+    <string name="visionCecyte">Convertir al Colegio de Estudios Científicos y Tecnológicos del Estado de Oaxaca en una institución educativa de calidad en el nivel medio superior en el estado y proyectar su presencia a nivel nacional.</string>
+    <string name="cecyteCarrerasPDS">-Desarrollo Organizacional -Programación -Soporte y Mantenimiento en Equipo de Cómputo</string>
+    <string name="to_locate">Localizar</string>
+    <string name="invite">¿Te gustaría formar parte del CECyTEO?  Localiza el que te quede mas cerca aquí.</string>
+    <string name="AvaibleCarrer">Carreras Disponibles</string>
+    <string name="title_activity_maps_reference">Map</string>
+    <string name="title_activity_maps_test">Map</string>
+    <string name="user">Correo Electrónico</string>
+    <string name="noTest"></string>
+    <string name="password">Contraseña</string>
+    <string name="aboutC">Es el Colegio de Estudios Científicos   y  Tecnológicos del estado de   Oaxaca</string>
+    <string name="significadoC">¿Qué significa CECyTEO?</string>
+    <string name="carerrasC">-Desarrollo Organizacional  \n -Programación   \n -Soporte y Mantenimiento en  \n Equipo de Cómputo</string>
+    <string name="schoolships_transport">La beca de transporte va destinado para los alumnos que viven muy lejos de su plantel o no cuentan con los recursos necesarios para viajar en transporte. Toca la imagen para mas información</string>
+    <string name="schoolships_pernament">La beca de permanencia va a dirigida para aquellos alumnos que son de escasos recursos. Toca la imagen para mas informaciòn</string>
+    <string name="school_ships">La beca contra abandono escolar esta dirigida hacia los alumnos que corren el riesgo de irse de la escuela por alguna situación que se les presente. Toca la imagen para mas información</string>
+    <string name="pass_confirm">Confirmar contraseña</string>
+    <string name="enrollment_teach">Matricula Profesional</string>
+    <string name="join">Únete</string>
+    <string name="enrollment_target">Matricula (Alumno)</string>
+    <string name="email_discrect">Correo elctronico (Tutor)</string>
+    <string name="into_as">Entra como:</string>
+    <string name="shoolships_entrepreneur">La beca de Emprendedores va dirigida a los jóvenes que tienen una gran idea en mente pero necesitan de financiameniento para llevarlo a cabo. Toca la imagen para mas información</string>
+    <string name="more_info_schoolships">Si quieres mas información sobre las becas toca la imagen </string>
+
+    <string name="ipdebug">http://192.168.1.89</string>
+
+    <!--Cambiar la ip al momento de hacer updatees-->
+
+    <string name="ip">https://fromdb.000webhostapp.com</string>
+
+    <string name="registrarse">Registrarse</string>
+    <string name="noAsociativo">No. Asignado</string>
+    <string name="info_about_data">Estos datos seran vistos por el directivo, sus alumnos y los tutores al momento de presionar el botòn \n \"Actualizar\"</string>
+    <string name="info_about_parent">Estos datos serán vistos por el directivo y los docentes</string>
+    <string name="img_noImageProfile">http://thephpfactory.com/images/user_profile1.png</string>
+    <string name="toch_here_pots">Si desea agregar una foto para ilustrar \n la publicación toque aquí</string>
+    <string name="FirtsImage">"/AcitivitiesMain/AllImages/imgsBackGroundApp/imageFondo1.jpg"</string>
+    <string name="SecondImage">"/AcitivitiesMain/AllImages/imgsBackGroundApp/imageFondo2.jpg"</string>
+    <string name="title_activity_all_sign_in_view_pager">AllSignInViewPager</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_all_sign_up_view_pager_registro">AllSignUpViewPagerRegistro</string>
+    <string name="downloadNow">Se ha encontrado una actualización, ve a la Play Store o presiona \"Actualizar\"</string>
+    <string name="slectedPerfil">Seleccione su perfíl \n\n  Presione en \"Ninguno\"</string>
+    <string name="touchHereProfile">¿Quieres saber más?\nPulsa aquí</string>
+
+
+
+
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+
+            <item
+                android:id="@+id/News"
+                android:icon="@drawable/ic_notice_me"
+                android:title="Noticias"
+                android:checkable="true"
+                />
+
+        <item
+            android:id="@+id/Materias"
+            android:icon="@drawable/ic_book_drawer"
+            android:title="Materias"
+            android:checkable="true"
+            />
+
+            <item
+            android:id="@+id/Calificaciones"
+            android:icon="@drawable/ic_calificaciones"
+            android:title="Calificaciones"
+                android:checkable="true"
+            />
+
+            <item
+                android:id="@+id/Becas"
+                android:icon="@drawable/ic_school_ships"
+                android:title="Becas"
+                android:checkable="true"
+                />
+
+    </group>
+        <item android:title="Más..."
+            >
+            <menu>
+
+
+                <item
+                    android:id="@+id/SendComments"
+                    android:icon="@drawable/ic_action_send_comments"
+                    android:title="Envia tus comentarios"
+                    android:checkable="true"
+
+                    />
+
+                <item
+                    android:id="@+id/Web"
+                    android:icon="@drawable/ic_news_here"
+                    android:title="Página web"
+                    android:checkable="true"
+                    />
+
+             </menu>
+
+        </item>
+</menu>

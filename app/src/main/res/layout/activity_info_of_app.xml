@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.khalyd.cecyteapp.ActivitysSubjectsMain.SubejectsCompletes"
+
+    >
+    <include
+        android:id="@+id/toolbarInfo"
+        layout="@layout/toolbar"
+        />
+
+    <TextView
+        android:id="@+id/textInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="LasTarjetasAbriranDependiendoDelPerfil"
+        android:layout_centerInParent="true"
+        android:textSize="20sp"
+
+        />
+    <!-- Creo q para empezar un layout debe de ser RelativeLayout
+    porq se acomoda mejor
+    -->
+    <TextView
+        android:id="@+id/textInfo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="Si el estudainte es 5to semestre "
+        android:layout_centerInParent="true"
+        android:textSize="20dp"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/textInfo"
+
+        />
+    <TextView
+        android:id="@+id/textInfo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="se abriran sus materias correspondientes"
+        android:layout_centerInParent="true"
+        android:textSize="20dp"
+        android:layout_margin="0dp"
+        android:layout_below="@+id/textInfo2"
+        />
+    <TextView
+        android:id="@+id/textInfo4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="O si es de 3ro se abriran las q le \n                 corresponda"
+        android:layout_centerInParent="true"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/textInfo3"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="custom_tool" parent="@style/Widget.Design.CollapsingToolbar">
+        <item name="android:titleTextColor">#ffff</item>
+        <item name="android:text">@string/Leoye</item>
+
+    </style>
+
+</resources>

@@ -1,0 +1,197 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.khalyd.cecyteapp.FragmentsDocenteSignUp.DirectivoSignUp">
+
+    <!--Cambiar los nombre de este perfil-->
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context="com.khalyd.cecyteapp.FragmentsDocenteSignUp.DocenteSignUp">
+
+        <LinearLayout
+            android:id="@+id/lienar"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="250dp"/>
+
+
+        <ScrollView
+            android:id="@+id/Scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:scrollbarSize="4dp"
+            android:layout_below="@id/lienar"
+            android:scrollbarThumbVertical="@color/colorScroll"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/linearVertical_Directivo_SigUp"
+                >
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/enrollmentTeacher_Professional_Directivo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="30dp"
+                    android:textColorHint="#9E9E9E"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="7"
+                    app:counterOverflowTextAppearance="@style/CounterOverFlow"
+                    app:counterTextAppearance="@style/CounterNormal"
+                    >
+
+                    <EditText
+                        android:id="@+id/get_enrollmentTeacher_Professional_Directivo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="20"
+                        android:inputType="number"
+                        android:backgroundTint="#BDBDBD"
+                        android:textColorHint="#9E9E9E"
+                        android:textColor="#FFFF"
+                        android:textCursorDrawable="@drawable/mycursor"
+                        android:hint="@string/noAsociativo"
+                        android:drawableStart="@mipmap/ic_card"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/emailTeacher_Directivo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:textColorHint="#9E9E9E"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <EditText
+                        android:id="@+id/get_emailTeacher_Directivo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="35"
+                        android:inputType="textEmailAddress"
+                        android:backgroundTint="#BDBDBD"
+                        android:textColorHint="#9E9E9E"
+                        android:textColor="#FFFF"
+                        android:textCursorDrawable="@drawable/mycursor"
+                        android:hint="@string/email"
+                        android:drawableStart="@drawable/text_pras_no"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/passwordTeacher_Directivo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:textColorHint="#9E9E9E"
+                    android:layout_marginTop="20dp"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/sloganColor"
+                    >
+
+                    <EditText
+                        android:id="@+id/get_passwordTeacher_Directivo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="35"
+                        android:inputType="textPassword"
+                        android:backgroundTint="#BDBDBD"
+                        android:textColorHint="#9E9E9E"
+                        android:textColor="#FFFF"
+                        android:textCursorDrawable="@drawable/mycursor"
+                        android:hint="@string/pass"
+                        android:drawableStart="@drawable/text_passwordoo"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/password_Confirm_Teacher_Directivo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:textColorHint="#9E9E9E"
+                    android:layout_marginTop="20dp"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/sloganColor"
+                    >
+
+                    <EditText
+                        android:id="@+id/get_password_Confirm_Teacher_Directivo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="35"
+                        android:inputType="textPassword"
+                        android:backgroundTint="#BDBDBD"
+                        android:textColorHint="#9E9E9E"
+                        android:textColor="#FFFF"
+                        android:textCursorDrawable="@drawable/mycursor"
+                        android:hint="@string/pass_confirm"
+                        android:drawableStart="@drawable/text_passwordoo"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+                    android:id="@+id/sign_up_Teacher_Directivo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/registrarse"
+                    android:gravity="center"
+                    android:background="@drawable/back_relleno"
+                    android:textColor="#ffff"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:paddingLeft="70dp"
+                    android:paddingRight="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="80dp"
+                    app:finalCornerAngle="100dp"
+                    app:initialCornerAngle="100dp"
+                    app:spinning_bar_color="@color/yellow"
+                    app:spinning_bar_width="2dp" />
+
+                <!--Mismo procedimiento-->
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+
+    </RelativeLayout>
+
+
+    <!--Cambiar los nombres de este perfil-->
+
+
+</FrameLayout>

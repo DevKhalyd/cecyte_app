@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--Para estos tipos de diseños debo de empezar con LinearLayout-->
+
+
+    <android.support.v7.widget.Toolbar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar_pots_student"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+
+                android:id="@+id/titlePots"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="50dp"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:hint="Escriba el asunto..."
+                 />
+
+
+            <EditText
+                android:id="@+id/descriptionPots"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titlePots"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:hint="Escriba la descripción...."
+                android:inputType="textMultiLine"
+                android:maxLines="10" />
+
+            <ProgressBar
+                android:id="@+id/load_post_Directivo"
+                android:layout_width="35dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/touchHereForRotateImg"
+                android:layout_height="35dp" />
+
+
+            <TextView
+                android:id="@+id/touchHereFoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descriptionPots"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="@string/toch_here_pots" />
+
+            <TextView
+                android:id="@+id/touchHereForRotateImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/touchHereFoto"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Toque para rotar la imagen"
+                android:drawableStart="@drawable/rotate_image"
+                />
+
+            <RelativeLayout
+                android:id="@+id/relativeImage"
+                android:layout_width="match_parent"
+                android:layout_height="295dp"
+                android:layout_below="@+id/load_post_Directivo"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/imagePots"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="8dp"
+                    />
+
+            </RelativeLayout>
+            <!--Para una mejor optimizacion de la foto puedo poner un layout
+                 con margenes definidos y luego ´poner el ImageView con wrap
+                 content y asi se acomodaria a un buen tamaño-->
+            <TextView
+
+                android:id="@+id/text_Previsualation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/relativeImage"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="20dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

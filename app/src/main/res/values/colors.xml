@@ -1,0 +1,44 @@
+
+<resources>
+
+<color name="colorPrimary">#FF5722</color>
+
+<color name="colorPrimaryDark">#E64A19</color>
+
+<color name="clorPrimaryLight">#FFCCBC</color>
+
+<color name="colorAccent">#FF9800</color>
+
+    <color name="colorBackground">#eeee</color>
+
+    <color name="sloganColor">#ffff</color>
+
+<color name="imputLayout">#E0E0E0</color>
+
+    <color name="barSignUp">#33691E</color>
+
+    <color name="barSignAs">#FFA000</color>
+
+    <color name="barInfoApp">#33691E</color>
+
+    <color name="colorTitleInfo">#8BC34A</color>
+
+    <color name="colorToolbartoLocate">#8BC34A</color>
+
+    <color name="coloPrymaryDarkToLocate">#558B2F</color>
+
+    <color name="colorScroll">#9E9E9E</color>
+
+    <color name="red">#B71C1C</color>
+
+    <color name="red2">#D50000</color>
+    <color name="yellow">#FFC107</color>
+
+    <color name="transparent">#80000000</color>
+
+    <color name="serverNoWokr">#3F51B5</color>
+
+
+
+
+</resources>

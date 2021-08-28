@@ -1,0 +1,127 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.khalyd.cecyteapp.Fragments.Schoolships">
+
+    <ScrollView
+        android:id="@+id/Scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:scrollbarSize="4dp"
+        android:layout_below="@id/student"
+        android:scrollbarThumbVertical="@color/colorScroll"
+        >
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/schoolships_background">
+
+    <ImageView
+        android:id="@+id/transport"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/ic_bus_hd"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/schoolships_transport"
+        android:textColor="@color/sloganColor"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:layout_marginTop="25dp"
+        android:textSize="17sp"
+        />
+
+    <ImageView
+        android:id="@+id/two_students"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/ic_students_hd"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/schoolships_pernament"
+        android:textColor="@color/sloganColor"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:layout_marginTop="25dp"
+        android:textSize="17sp"
+        />
+    <ImageView
+        android:id="@+id/backpack_schools"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/ic_backpack_school"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/school_ships"
+        android:textColor="@color/sloganColor"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:layout_marginTop="25dp"
+        android:textSize="17sp"
+        />
+
+            <ImageView
+                android:id="@+id/entrepreneur"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/ic_entrepreneur"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shoolships_entrepreneur"
+                android:textColor="@color/sloganColor"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:layout_marginTop="25dp"
+                android:textSize="17sp"
+                />
+
+            <ImageView
+            android:id="@+id/circle_background"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/ashape_circle"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/more_info_schoolships"
+                android:textColor="@color/sloganColor"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:layout_marginTop="25dp"
+                android:textSize="17sp"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

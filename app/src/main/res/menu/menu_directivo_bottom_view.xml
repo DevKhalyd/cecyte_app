@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/students"
+        android:title="Alumnos"
+        android:icon="@drawable/ic_califications" />
+
+    <item android:id="@+id/pots"
+        android:title="Publicaciones"
+        android:icon="@drawable/ic_news_here"
+        />
+
+    <item android:id="@+id/optionDirectivo"
+        android:title="Opciones"
+        android:icon="@drawable/ic_settings" />
+    
+</menu>
+
+

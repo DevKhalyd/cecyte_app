@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.khalyd.cecyteapp.ActivitysSubjectsMain.FilosofySubject"
+    android:orientation="vertical"
+    >
+    <include
+        android:id="@+id/toolbar_philosophy"
+        layout="@layout/toolbar"
+        />
+<!--Cuando aparezca Speeling = Typo || Misspelling quiere decir que esta mal
+    escrito
+    -->
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/tabLayoutPhilosophy"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:minHeight="?actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:tabBackground="@color/colorPrimary"
+        app:tabIndicatorColor="@color/colorAccent"
+        />
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewPagerFilosofy"
+        />
+    <!-- Cuando ponga Tabs deso usar LinearLayout
+    -->
+
+</LinearLayout>

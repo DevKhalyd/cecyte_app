@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    android:layout_width="match_parent"
+    android:id="@+id/myTB"
+    android:layout_height="60dp"
+    android:background="?attr/colorPrimary"
+    android:elevation="4dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Avisos"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="bold|normal"
+        android:textColor="@color/sloganColor"
+        />
+
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/LogOutDirectivo"
+        android:title="Cerrar Sesión"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/UpdateProfileDirectivo"
+        android:title="Actualizar perfil"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/UpdatePictures"
+        android:title="Actualizar fondos de pantalla"
+        app:showAsAction="never"
+        />
+
+    
+</menu>

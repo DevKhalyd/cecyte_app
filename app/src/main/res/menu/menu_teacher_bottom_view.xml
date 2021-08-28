@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/myGroups"
+        android:title="Mis Grupos"
+        android:icon="@drawable/ic_califications" />
+
+    <item android:id="@+id/feature"
+        android:title="Noticias"
+        android:icon="@drawable/ic_news_here"
+
+        />
+
+    <item android:id="@+id/optionTeacher"
+        android:title="Opciones"
+        android:icon="@drawable/ic_settings" />
+
+
+
+
+</menu>

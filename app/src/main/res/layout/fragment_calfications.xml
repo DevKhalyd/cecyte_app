@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.khalyd.cecyteapp.ActivityParent.CalficationsFragment">
+
+    <include
+        android:id="@+id/toolbar_califications"
+        layout="@layout/toolbar_califications" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleImageSonParent"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="60dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--Traer url y si no hay url poner la de por defecto-->
+
+        <TextView
+            android:id="@+id/txtNameSoonForParent"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="68dp"
+            android:text="Cargando..."
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.37"
+            app:layout_constraintStart_toEndOf="@+id/circleImageSonParent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtSurNameSoonForParent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:maxLines="1"
+            android:text="Cargando..."
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.37"
+            app:layout_constraintStart_toEndOf="@+id/circleImageSonParent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNameSoonForParent" />
+
+        <TextView
+            android:id="@+id/txtGroupSoonForParent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Cargando..."
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.37"
+            app:layout_constraintStart_toEndOf="@+id/circleImageSonParent"
+            app:layout_constraintTop_toBottomOf="@+id/txtSurNameSoonForParent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+          <TextView
+              android:id="@+id/douwantknowmore"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              android:textStyle="bold|italic"
+              android:text="¿Quiere saber más?\nToque aquí"
+              android:gravity="center"
+              android:textColor="@color/black"
+              />
+
+
+
+      </RelativeLayout>
+
+   <!--  Aqui se mostrarian las calificaciones de los estudiantes -->
+    <!--Ademas se mostraria -->
+
+</LinearLayout>

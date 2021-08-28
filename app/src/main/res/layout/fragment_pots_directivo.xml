@@ -1,0 +1,101 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.khalyd.cecyteapp.ActivityDirectivo.PotsDirectivo">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerDiectivo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBarDirectivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:progress="@integer/google_play_services_version"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/recyclerDiectivo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/fabMenuDirectivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:fab_addButtonColorPressed="@color/barSignUp"
+        app:fab_labelStyle="@style/Etiquetas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintStart_toStartOf="parent"
+        fab:fab_addButtonColorNormal="@color/colorAccent"
+        fab:fab_addButtonSize="normal"
+        fab:fab_labelsPosition="left">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabAllProfilesPots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_addButtonColorPressed="@color/sloganColor"
+            fab:fab_colorNormal="@color/yellow"
+            fab:fab_icon="@drawable/ic_pots_for_all"
+            fab:fab_size="mini"
+            fab:fab_title="Todos"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabEstudiante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_addButtonColorPressed="@color/sloganColor"
+            fab:fab_colorNormal="@color/barSignUp"
+            fab:fab_icon="@drawable/ic_student"
+            fab:fab_size="mini"
+            fab:fab_title="Estudiantes" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabDocente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_addButtonColorPressed="@color/sloganColor"
+            fab:fab_colorNormal="@color/red"
+            fab:fab_icon="@drawable/ic_docente_icon"
+            fab:fab_size="mini"
+            fab:fab_title="Profesores" />
+
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabParent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_addButtonColorPressed="@color/sloganColor"
+            fab:fab_colorNormal="@color/colorPrimary"
+            fab:fab_icon="@drawable/ic_parent"
+            fab:fab_size="mini"
+            fab:fab_title="Tutores" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_whatsisthis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_addButtonColorPressed="@color/sloganColor"
+            fab:fab_colorNormal="@color/colorToolbartoLocate"
+            fab:fab_icon="@drawable/ic_question"
+            fab:fab_size="mini"
+            fab:fab_title="¿Qué es esto?" />
+
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+</android.support.constraint.ConstraintLayout>

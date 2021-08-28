@@ -1,0 +1,108 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/LInearDocente"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/emailDocente"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="250dp"
+            android:textColorHint="#9E9E9E"
+            >
+
+            <EditText
+                android:id="@+id/email_Teacher_Txt_Docente"
+                android:layout_width="wrap_content"
+                android:layout_height="53dp"
+                android:backgroundTint="#BDBDBD"
+                android:cursorVisible="true"
+                android:drawableStart="@drawable/text_pras_no"
+                android:ems="35"
+                android:hint="@string/user"
+                android:inputType="textEmailAddress"
+                android:shadowColor="#212121"
+                android:textColor="#FFFF"
+                android:textColorHint="#9E9E9E"
+                android:textCursorDrawable="@drawable/mycursor" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/passDocente"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:textColorHint="#9E9E9E"
+        app:passwordToggleEnabled="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        app:passwordToggleTint="@color/sloganColor"
+        tools:layout_editor_absoluteY="330dp">
+
+        <EditText
+            android:id="@+id/passwordDocente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#BDBDBD"
+            android:cursorVisible="true"
+            android:drawableStart="@drawable/text_passwordoo"
+            android:ems="35"
+            android:hint="@string/pass"
+            android:inputType="textPassword"
+            android:shadowColor="#212121"
+            android:text=""
+            android:textColor="#FFFF"
+            android:textColorHint="#9E9E9E"
+            android:textCursorDrawable="@drawable/mycursor" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+        android:id="@+id/loginDocente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/back_relleno"
+        android:gravity="center"
+        android:paddingLeft="105dp"
+        android:paddingRight="105dp"
+        android:layout_marginTop="50dp"
+        android:text="Entrar"
+        android:textAllCaps="false"
+        android:textColor="#ffff"
+        android:textSize="20sp"
+        app:finalCornerAngle="100dp"
+        app:initialCornerAngle="100dp"
+        app:spinning_bar_color="@color/yellow"
+        app:spinning_bar_width="2dp" />
+
+
+      </LinearLayout>
+
+
+    <!--No usar contraint en fragemets complementarios como lo es en este casp -->
+
+
+</FrameLayout>
+
+

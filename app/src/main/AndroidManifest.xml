@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.khalyd.cecyteapp">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- Es importante poner quien es el padre -->
+    <!-- Solo le movi a la paraentNameACT de la actividad q vaya ir hacia atras -->
+    <!-- Quite el meta data de cada uno -->
+
+    <application
+
+        android:name=".CheckingInternetClasses.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_app"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_app_redound"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <receiver
+            android:name=".CheckingInternetClasses.ConnectivityReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".Activities.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Aqui puse el EdiProfile q se lance primero para probar datos -->
+
+        <activity
+            android:name=".ActivitiesDeprecated.LoginStudent"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+
+            <!-- Con portrait se puede bloquear la orientacion de la pantalla -->
+        </activity>
+        <activity
+            android:name=".Activities.FirtsActivtiChooseTwo"
+            android:screenOrientation="portrait" /> <!-- Firts Activity -->
+
+        <activity
+            android:name=".ActivitysSubjectsMain.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeMainActivity" />
+        <!-- checar bien donde cierra cada etiqueta -->
+        <activity
+            android:name=".ActivitysSubjectsMain.ProfessionalModule"
+            android:parentActivityName=".ActivitysSubjectsMain.MainActivity" />
+        <activity
+            android:name=".ActivitysSubjectsMain.FilosofySubject"
+            android:parentActivityName=".ActivitysSubjectsMain.MainActivity" />
+        <activity
+            android:name=".ActivitysSubjectsMain.SubejectsCompletes"
+            android:parentActivityName=".ActivitysSubjectsMain.MainActivity" />
+        <activity
+            android:name=".ActivitiesDeprecated.SignInAs"
+            android:parentActivityName=".Activities.FirtsActivtiChooseTwo"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeSignAs" />
+        <activity
+            android:name=".ActivitiesDeprecated.LoginTeacher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActivitiesDeprecated.LoginParent"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActivitysSubjectsMain.TutoriasSubjects"
+            android:parentActivityName=".ActivitysSubjectsMain.MainActivity" />
+        <activity
+            android:name=".ActivitysSubjectsMain.PandS"
+            android:parentActivityName=".ActivitysSubjectsMain.MainActivity" />
+        <activity
+            android:name=".Activities.CecyteLocate"
+            android:parentActivityName=".Activities.FirtsActivtiChooseTwo"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.AboutCecyteInfo"
+            android:screenOrientation="portrait"
+            android:theme="@style/InfoApp" />
+
+        <!-- Checar donde se pone la key del api -->
+
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Activities.MapsActivityTest"
+            android:label="@string/title_activity_maps_test" />
+        <activity
+            android:name=".ActivitiesDeprecated.SignUpAs"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeSignUp" />
+        <activity
+            android:name=".ActivitiesDeprecated.SignUpStudent"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ActivitiesDeprecated.SignUpTeacher"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ActivitiesDeprecated.SignUpParent"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ActivityParent.MainActivityParent" />
+        <activity android:name=".ActivityTeacher.MainActivityTeacher" />
+        <activity
+            android:name=".ActivitysSubjectsMain.EditProfile"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Activities.NoInternetConnetivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActivityTeacher.EditProfileTeacher"
+            android:parentActivityName=".ActivityTeacher.MainActivityTeacher" />
+        <activity
+            android:name=".ActivityParent.EditProfileParent"
+            android:parentActivityName=".ActivityParent.EditProfileParent" />
+        <activity android:name=".ActivityDirectivo.MainActivityDirectivo" />
+        <activity
+            android:name=".ActivityDirectivo.EditProfileDirectivo"
+            android:parentActivityName=".ActivityDirectivo.MainActivityDirectivo" />
+        <activity
+            android:name=".ActivityDirectivo.PotsAnyProfile"
+            android:parentActivityName=".ActivityDirectivo.MainActivityDirectivo" />
+        <activity
+            android:name=".ActivityDirectivo.UpdatePhotosApp"
+            android:parentActivityName=".ActivityDirectivo.MainActivityDirectivo" />
+        <activity
+            android:name=".Activities.AllSignInViewPager"
+            android:label="@string/title_activity_all_sign_in_view_pager"
+            android:theme="@style/ViewPagerTheme" />
+        <activity
+            android:name=".Activities.AllSignUpViewPagerRegistro"
+            android:label="@string/title_activity_all_sign_up_view_pager_registro"
+            android:theme="@style/ViewPagerTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".Activities.EditProfilePictureAll"
+            ></activity>
+    </application>
+
+</manifest>
